@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Views.Fragments.NearlyTestsFragment">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recUploadMp3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="15dp"
+        tools:listitem="@layout/item_lecture_mp3_upload" />
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabOpenBottomSheetMp3"
+        android:layout_width="@dimen/MargintTopForSplashImage"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="@dimen/MarginLinerFotText"
+        android:src="@drawable/ic_add_white"
+        />
+
+    <include layout="@layout/bottom_sheet_upload_mp3"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

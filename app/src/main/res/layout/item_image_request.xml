@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    >
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgProfileFrgRequest"
+        android:layout_width="@dimen/WidthHello"
+        android:layout_height="@dimen/WidthAndHeightImageProfile"
+        android:layout_alignBottom="@+id/a"
+        android:layout_alignTop="@id/a"
+        />
+
+
+    <LinearLayout
+        android:padding="@dimen/BetweenDontAndSign"
+        android:id="@+id/a"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="@dimen/PaddingForSearch"
+        android:layout_toEndOf="@+id/imgProfileFrgRequest"
+
+
+        >
+
+        <TextView
+            android:id="@+id/txtFrgRequestName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/FontFamily"
+            android:layout_marginBottom="@dimen/BetweenDontAndSign"
+            android:textSize="@dimen/LoginBtn"
+            />
+        <TextView
+            android:id="@+id/txtFrgRequestStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/FontFamily"
+            android:textSize="@dimen/newsMoreTextSize"
+            />
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/MargintTopForSignintocontinue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <Button
+                android:id="@+id/btnAcceptRequest"
+                android:background="@drawable/style_btn_request_acept"
+                android:layout_width="@dimen/MargintTopForSplashImage"
+                android:layout_height="@dimen/WidtehToTime"
+                android:layout_marginEnd="@dimen/BetweenDontAndSign"
+                style="@style/FontFamily"
+                android:text="Accept"
+                android:textColor="@color/White"
+                android:textSize="@dimen/newsMoreTextSize"
+android:visibility="gone"
+                />
+
+            <Button
+                android:id="@+id/btnCancelRequest"
+
+                style="@style/FontFamily"
+                android:text="Cancel"
+                android:textSize="@dimen/newsMoreTextSize"
+                android:textColor="@color/White"
+                android:background="@drawable/style_btn_request_denied"
+                android:layout_width="@dimen/MargintTopForSplashImage"
+                android:layout_height="@dimen/WidtehToTime"
+                android:layout_marginStart="@dimen/BetweenDontAndSign"
+android:visibility="gone"
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

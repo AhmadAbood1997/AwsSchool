@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="@dimen/PaddingForItemCourse"
+    app:chainUseRtl="false"
+    tools:context=".Views.Activities.SettingActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imgSettingPerson"
+                android:layout_width="@dimen/HeightForItemCourse"
+                android:layout_height="@dimen/HeightForItemCourse"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/BetweenDontAndSign"
+                android:src="@drawable/ic_interface"
+
+
+                />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputSettingUsername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/HelloText"
+                android:layout_marginTop="@dimen/MargintTopForEditUserName">
+
+                <EditText
+                    android:id="@+id/editTextSettingUsername"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableEnd="@drawable/ic_person"
+                    android:hint="@string/user_name"
+                    android:inputType="textEmailAddress"
+                    android:textSize="@dimen/LoginBtn" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputSettingStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/HelloText">
+
+                <EditText
+                    android:id="@+id/editTextSettingStatus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableEnd="@drawable/ic_mode_edit_black_24dp"
+                    android:hint="@string/status"
+                    android:inputType="textEmailAddress"
+                    android:textSize="@dimen/LoginBtn" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/MargintTopForBtn"
+                android:gravity="center"
+                >
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/rdArabic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/arabic_language"
+                    style="@style/FontFamily"
+                    android:layout_marginEnd="@dimen/WidthAndHeightImageProfile"
+                    android:textSize="@dimen/LoginBtn"
+                    />
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/rdEnglish"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/FontFamily"
+                    android:layout_marginStart="@dimen/WidthAndHeightImageProfile"
+                    android:text="@string/english_language"
+                    android:textSize="@dimen/LoginBtn"
+
+                    />
+
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/btnSettingSave"
+                style="@style/FontFamily"
+                android:layout_width="@dimen/WidthInputs"
+                android:layout_height="@dimen/HeightInputs"
+                android:layout_below="@+id/textInputPassword"
+                android:layout_marginTop="@dimen/MargintTopForBtn"
+                android:background="@drawable/style_btn"
+                android:text="@string/save"
+                android:textAllCaps="false"
+                android:textColor="@color/colorTextButton"
+                android:textSize="@dimen/LoginBtn" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</LinearLayout>

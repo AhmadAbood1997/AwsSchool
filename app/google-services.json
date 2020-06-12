@@ -1,0 +1,98 @@
+{
+  "project_info": {
+    "project_number": "1085942403988",
+    "firebase_url": "https://fir-authentication-ef93f.firebaseio.com",
+    "project_id": "fir-authentication-ef93f",
+    "storage_bucket": "fir-authentication-ef93f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1085942403988:android:6ba953f18389326b4cf581",
+        "android_client_info": {
+          "package_name": "com.example.firebaseauthentication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1085942403988-t2rq3aspmae43eercl3r5ra565ij2t79.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZd5da3Reh14UYAAdARCsqgUYMGdi4upM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1085942403988-t2rq3aspmae43eercl3r5ra565ij2t79.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1085942403988:android:cf5e0f53d1f9c0a44cf581",
+        "android_client_info": {
+          "package_name": "com.example.schoolapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1085942403988-t2rq3aspmae43eercl3r5ra565ij2t79.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZd5da3Reh14UYAAdARCsqgUYMGdi4upM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1085942403988-t2rq3aspmae43eercl3r5ra565ij2t79.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1085942403988:android:75631aa6b87370c64cf581",
+        "android_client_info": {
+          "package_name": "com.example.uploadimagefirebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1085942403988-t2rq3aspmae43eercl3r5ra565ij2t79.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZd5da3Reh14UYAAdARCsqgUYMGdi4upM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1085942403988-t2rq3aspmae43eercl3r5ra565ij2t79.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

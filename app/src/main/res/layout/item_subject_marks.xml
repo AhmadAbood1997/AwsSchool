@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_rowWeight="1"
+    android:layout_columnWeight="1"
+    android:layout_margin="@dimen/MarginCardItemCourse"
+    android:background="@color/White"
+    app:cardCornerRadius="@dimen/cardCornerRadiusAppointment"
+    app:cardElevation="6dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/cardCornerRadiusAppointment"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+            <ImageView
+                android:layout_width="@dimen/DrawableSearchPadding"
+                android:layout_height="@dimen/DrawableSearchPadding"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="@dimen/PaddingForSearch"
+                android:background="@drawable/style_logo_course"
+                android:src="@drawable/ic_subject"
+
+                />
+
+
+
+
+            <TextView
+                android:id="@+id/txtNameSubjectMarks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/FontFamily"
+                android:textSize="@dimen/newsMoreTextSize"
+                android:textColor="@android:color/black"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/btnSubjectGoToCourseMarks"
+                android:layout_width="@dimen/WidtehToTime"
+                android:layout_height="@dimen/WidtehToTime"
+
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/ic_chevron_right" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/expandleTestCoursesMarks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            >
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycleTestCoursesMarks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/BetweenDontAndSign"
+                tools:listitem="@layout/item_course_nearly_test" />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

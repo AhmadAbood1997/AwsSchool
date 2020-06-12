@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/HeightForItemAppointment"
+    android:layout_rowWeight="1"
+    android:layout_columnWeight="1"
+    android:layout_margin="@dimen/MarginCardItemCourse"
+    android:backgroundTint="@color/colorPrimary"
+    app:cardCornerRadius="@dimen/cardCornerRadiusAppointment"
+    app:cardElevation="6dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/PaddingForSearch">
+
+
+        <ImageView
+            android:layout_width="@dimen/HeightForSearch"
+            android:layout_height="@dimen/HeightForSearch"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/BetweenBtnAndDont"
+            android:background="@drawable/style_logo_course"
+            android:src="@drawable/ic_picture" />
+
+        <TextView
+            android:id="@+id/txtNameLecturePdf"
+            style="@style/FontFamily"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/DescriptionForWelcome" />
+
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

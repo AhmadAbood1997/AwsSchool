@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/MargintTopForSignintocontinue"
+    tools:context=".Views.Activities.PhoneLoginActivity">
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputEnterPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/HelloText"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/MargintTopForEditUserName">
+
+        <EditText
+            android:id="@+id/edtEnterPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableEnd="@drawable/size_phone"
+            android:hint="Write Your Number Phone..."
+            style="@style/FontFamily"
+            android:inputType="textEmailAddress"
+            android:padding="@dimen/Username"
+            android:textSize="@dimen/LoginBtn" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputEnterCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/HelloText"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/MargintTopForEditUserName">
+
+        <EditText
+            android:id="@+id/edtEnterCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableEnd="@drawable/size_verfiy"
+            android:hint="Write Verification Code..."
+            android:visibility="gone"
+            style="@style/FontFamily"
+            android:inputType="textEmailAddress"
+            android:padding="@dimen/Username"
+            android:textSize="@dimen/LoginBtn" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <Button
+        android:id="@+id/btnSendCode"
+        style="@style/FontFamily"
+        android:layout_width="@dimen/WidthInputs"
+        android:layout_height="@dimen/HeightInputs"
+        android:layout_below="@+id/textInputEnterPhone"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/MargintTopForBtn"
+        android:background="@drawable/style_btn"
+        android:text="Send Verification Code"
+
+        android:textAllCaps="false"
+        android:textColor="@color/colorTextButton"
+        android:textSize="@dimen/LoginBtn" />
+
+    <Button
+        android:id="@+id/btnVerify"
+        style="@style/FontFamily"
+        android:visibility="gone"
+        android:layout_width="@dimen/WidthInputs"
+        android:layout_height="@dimen/HeightInputs"
+        android:layout_below="@+id/textInputEnterCode"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/MargintTopForBtn"
+        android:background="@drawable/style_btn"
+        android:text="Verify"
+        android:textAllCaps="false"
+        android:textColor="@color/colorTextButton"
+        android:textSize="@dimen/LoginBtn" />
+
+
+</RelativeLayout>

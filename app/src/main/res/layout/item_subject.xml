@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/WidthForItemCourse"
+    android:layout_height="@dimen/HeightForItemCourse"
+    android:layout_rowWeight="1"
+    android:layout_columnWeight="1"
+    android:layout_margin="@dimen/MarginCardItemCourse"
+    app:cardCornerRadius="@dimen/cardCornerRadius"
+    app:cardElevation="6dp">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/style_btn"
+        android:gravity="start"
+        android:orientation="vertical"
+        android:padding="@dimen/PaddingForItemCourse">
+
+        <ImageView
+            android:layout_width="@dimen/WidthAndHeightImageItemCourse"
+            android:layout_height="@dimen/WidthAndHeightImageItemCourse"
+            android:layout_gravity="start"
+            android:layout_marginBottom="40dp"
+            android:background="@drawable/style_logo_course"
+            android:src="@drawable/ic_subject"
+
+            />
+
+        <LinearLayout
+            android:layout_marginBottom="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtNameSubject"
+                style="@style/FontFamily"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/White"
+                android:textSize="@dimen/newsMoreTextSize" />
+
+            <TextView
+                android:id="@+id/txtNumberSubject"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/FontFamily"
+                android:textColor="@color/White"
+                android:textSize="@dimen/newsMoreTextSize" />
+        </LinearLayout>
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_weight="1">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/img1"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginEnd="-10dp"
+                    android:src="@drawable/ic_happy" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/img2"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_happy" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/img3"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="-10dp"
+                    android:src="@drawable/ic_happy" />
+            </LinearLayout>
+
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_add" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

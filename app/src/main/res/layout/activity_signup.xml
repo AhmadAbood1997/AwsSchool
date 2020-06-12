@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:padding="@dimen/MarginLinerFotText"
+
+    tools:context=".Views.Activities.SignupActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/HelloText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/Inputs"
+        android:layout_margin="@dimen/PaddingForSearch"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/welcom"
+            style="@style/FontFamily"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:layout_centerHorizontal="true"
+            android:text="@string/sign_up_welcome"
+            android:textColor="@color/colorForMainText"
+            android:textSize="@dimen/Welcome" />
+
+        <TextView
+            android:id="@+id/signin"
+            style="@style/FontFamily"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/welcom"
+            android:layout_marginTop="@dimen/MargintTopForSignintocontinue"
+            android:maxLines="1"
+            android:layout_centerHorizontal="true"
+            android:text="@string/create_your_account"
+            android:textSize="@dimen/LoginBtn" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/Inputs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/HelloText"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputUsernameLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/HelloText"
+            android:layout_marginTop="@dimen/MargintTopForEditUserName">
+
+            <EditText
+                android:id="@+id/editTextUsernameRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableEnd="@drawable/ic_email"
+                android:hint="@string/user_name"
+                android:inputType="textEmailAddress"
+                android:padding="@dimen/Username"
+                android:textSize="@dimen/LoginBtn"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputPassword"
+            style="@style/FontFamily"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textInputUsername"
+            android:layout_marginTop="@dimen/MargintTopForEditPassword"
+            android:hint="@string/password"
+            app:passwordToggleEnabled="true">
+
+            <EditText
+                android:id="@+id/editTextPasswordRegister"
+                style="@style/FontFamily"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:padding="@dimen/Username"
+                android:textSize="@dimen/LoginBtn"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <Button
+            android:id="@+id/btnRegister"
+            style="@style/FontFamily"
+            android:layout_width="@dimen/WidthInputs"
+            android:layout_height="@dimen/HeightInputs"
+            android:layout_below="@+id/textInputPassword"
+            android:layout_marginTop="@dimen/MargintTopForBtn"
+            android:background="@drawable/style_btn"
+            android:text="@string/Register"
+            android:textAllCaps="false"
+            android:textColor="@color/colorTextButton"
+            android:textSize="@dimen/LoginBtn" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Inputs"
+        android:layout_marginTop="@dimen/BetweenBtnAndDont"
+        android:gravity="center">
+
+
+        <TextView
+            android:id="@+id/HaveAccount"
+            style="@style/FontFamily"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:text="@string/already_have_an_account"
+            android:textSize="@dimen/LoginBtn" />
+
+
+        >
+    </LinearLayout>
+
+
+</RelativeLayout>

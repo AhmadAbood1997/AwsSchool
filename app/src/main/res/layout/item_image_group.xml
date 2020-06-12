@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:orientation="vertical">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgGroupProfile"
+        android:layout_width="@dimen/WidthAndHeightImageProfile"
+        android:layout_height="@dimen/WidthAndHeightImageProfile"
+        android:src="@drawable/school"
+        />
+
+
+
+
+    <TextView
+        android:id="@+id/txtGroupName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/FontFamily"
+        android:textSize="@dimen/LoginBtn"
+        android:layout_margin="@dimen/PaddingForSearch"
+        android:layout_toEndOf="@+id/imgGroupProfile"
+        />
+
+
+</RelativeLayout>

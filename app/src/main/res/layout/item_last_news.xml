@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_rowWeight="1"
+    android:layout_columnWeight="1"
+    android:layout_margin="@dimen/cardCornerRadiusAppointment"
+
+    android:background="@color/White"
+    app:cardCornerRadius="@dimen/cardCornerRadiusAppointment"
+    app:cardElevation="6dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/cardCornerRadiusAppointment"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/MargintTopForSplashImage">
+
+                <ImageView
+                    android:layout_width="@dimen/DrawableSearchPadding"
+                    android:layout_height="@dimen/DrawableSearchPadding"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="@dimen/PaddingForSearch"
+                    android:src="@drawable/ic_aws_notification"
+
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtTitleLastNews"
+                        style="@style/FontFamily"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/newsMoreTextSize" />
+
+
+                    <TextView
+                        android:id="@+id/txtContainLastNews"
+                        style="@style/FontFamily"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:layout_marginTop="@dimen/cardCornerRadiusAppointment"
+
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/newsMoreTextSize" />
+
+
+                    <TextView
+                        android:id="@+id/txtDateLastNews"
+                        style="@style/FontFamily"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:layout_marginTop="@dimen/cardCornerRadiusAppointment"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/newsMoreTextSize" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</androidx.cardview.widget.CardView>

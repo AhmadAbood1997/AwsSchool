@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/bottomSheetUploadNearlyTest"
+    android:background="@color/White"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="@dimen/MarginLinerFotText"
+    app:behavior_hideable="true"
+    app:behavior_peekHeight="0dp"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
+
+    tools:context=".Views.Activities.UploadNearlyTestActivity">
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputEnterNameTest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/MargintTopForBtn">
+
+        <EditText
+            android:id="@+id/editTextEnterNameTest"
+            style="@style/FontFamily"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_test_name"
+            android:inputType="textEmailAddress"
+            android:padding="@dimen/Username"
+            android:textSize="@dimen/LoginBtn" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/btnSelectDateTest"
+        style="@style/FontFamily"
+        android:layout_width="@dimen/WidthInputs"
+        android:layout_height="@dimen/HeightInputs"
+        android:layout_marginTop="@dimen/MargintTopForBtn"
+        android:background="@drawable/style_btn"
+        android:text="@string/select_date"
+        android:textAllCaps="false"
+        android:textColor="@color/colorTextButton"
+        android:textSize="@dimen/LoginBtn" />
+    <TextView
+        android:id="@+id/txtDateTest"
+        android:textColor="@android:color/black"
+        android:layout_margin="@dimen/MargintTopForEditPassword"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        style="@style/FontFamily"
+        android:textSize="@dimen/LoginBtn"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btnUploadTest"
+        style="@style/FontFamily"
+        android:layout_width="@dimen/WidthInputs"
+        android:layout_height="@dimen/HeightInputs"
+        android:layout_marginTop="@dimen/BetweenDontAndSign"
+        android:background="@drawable/style_btn"
+        android:text="@string/upload"
+        android:textAllCaps="false"
+        android:textColor="@color/colorTextButton"
+        android:textSize="@dimen/LoginBtn" />
+
+
+</LinearLayout>

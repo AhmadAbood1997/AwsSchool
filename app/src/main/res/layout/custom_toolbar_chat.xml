@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary">
+
+
+    <ImageButton
+        android:id="@+id/backToMainChat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:background="@color/colorPrimary"
+        android:src="@drawable/ic_arrow_back"
+
+        />
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgChatProfile"
+        android:src="@drawable/ic_interface"
+        android:layout_width="@dimen/WidthAndHeightImageProfile"
+        android:layout_height="@dimen/WidthAndHeightImageProfile"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/BetweenDontAndSign"
+        android:layout_toEndOf="@+id/backToMainChat"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="@dimen/BetweenDontAndSign"
+android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/imgChatProfile"
+
+        >
+        <TextView
+                android:id="@+id/txtNameChat"
+            style="@style/FontFamily"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:textSize="@dimen/LoginBtn" />
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

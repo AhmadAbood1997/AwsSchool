@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    >
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgFindFriendProfile"
+        android:layout_width="@dimen/WidthAndHeightImageProfile"
+        android:layout_height="@dimen/WidthAndHeightImageProfile"
+
+        android:src="@drawable/ic_interface" />
+
+    <TextView
+        android:id="@+id/txtFindFriendOnline"
+        android:layout_width="@dimen/PaddingForSearch"
+        android:layout_height="@dimen/PaddingForSearch"
+        android:layout_toEndOf="@+id/imgFindFriendProfile"
+        android:layout_marginStart="@dimen/MarginStartOnline"
+        android:background="@drawable/online_shape"
+        android:gravity="center"
+        android:visibility="gone"
+        android:padding="@dimen/PadingNotification"
+        android:textColor="@color/colorPrimary" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="@dimen/PaddingForSearch"
+        android:layout_toEndOf="@+id/imgFindFriendProfile"
+
+
+        >
+
+        <TextView
+            android:id="@+id/txtFindFriendName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/FontFamily"
+            android:layout_marginBottom="@dimen/BetweenDontAndSign"
+            android:textSize="@dimen/LoginBtn"
+            />
+        <TextView
+            android:id="@+id/txtFindFriendStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/FontFamily"
+            android:textSize="@dimen/newsMoreTextSize"
+            />
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

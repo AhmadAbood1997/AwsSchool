@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_notification"
+        android:title="Notification"
+        app:actionLayout="@layout/item_notification"
+        app:showAsAction="ifRoom"
+        />
+
+    <item
+        android:id="@+id/menu_image_profile"
+        android:title="Notification"
+        app:actionLayout="@layout/item_image_profile"
+        app:showAsAction="ifRoom"
+        />
+
+
+</menu>

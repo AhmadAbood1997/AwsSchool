@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/RecycleItemWelcome"
+    android:padding="10dp"
+    android:background="#fff">
+
+    <ImageView
+        android:id="@+id/ImageItemWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/HeightImageItemWelcome"
+        android:src="@drawable/education2" />
+
+    <TextView
+        android:id="@+id/DescriptionItemWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@+id/ImageItemWelcome"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        style="@style/FontFamily"
+        android:textColor="#000"
+        android:textSize="@dimen/DescriptionForWelcome" />
+
+
+</RelativeLayout>

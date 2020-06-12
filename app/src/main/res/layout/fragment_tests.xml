@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    android:orientation="vertical"
+    tools:context=".Views.Fragments.TestsFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/BetweenBtnAndDont">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgFrgUserImage"
+            android:src="@drawable/ic_interface"
+            android:layout_width="@dimen/WidthHello"
+            android:layout_height="@dimen/WidthHello"
+     />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:paddingStart="@dimen/PaddingForSearch">
+
+            <TextView
+                android:id="@+id/student"
+                style="@style/FontFamily"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/student"
+                android:textColor="@color/White"
+                android:textSize="@dimen/SizeHello" />
+
+            <TextView
+              android:layout_below="@+id/student"
+                android:id="@+id/txtFrgTestUserName"
+                android:layout_alignEnd="@+id/student"
+                style="@style/FontFamily"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/PaddingForSearch"
+                android:textColor="@color/White"
+                android:textSize="@dimen/LoginBtn" />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/style_test"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabForTest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/viewPagerFoeWelcome"
+            android:layout_centerInParent="true"
+            app:tabSelectedTextColor="@color/colorPrimary"
+            android:layout_margin="@dimen/BetweenBtnAndDont"
+            app:tabIndicatorFullWidth="false"
+            app:tabTextAppearance="@style/tab_text">
+
+
+        </com.google.android.material.tabs.TabLayout>
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewPagerTests"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/ColorMain">
+
+        </androidx.viewpager.widget.ViewPager>
+
+    </LinearLayout>
+
+
+</LinearLayout>

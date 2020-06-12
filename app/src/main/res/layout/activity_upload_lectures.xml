@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    android:orientation="vertical"
+    tools:context=".Views.Fragments.LecturesFragment">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/BetweenBtnAndDont">
+
+
+        <ImageView
+            android:layout_width="@dimen/HeightForItemAppointment"
+            android:layout_height="@dimen/HeightForItemAppointment"
+            android:src="@drawable/ic_happy" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:paddingStart="@dimen/PaddingForSearch">
+
+            <TextView
+                style="@style/FontFamily"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:text="@string/select_what_you_need"
+                android:textColor="@color/White"
+
+                android:textSize="@dimen/LoginBtn" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/ColorMain"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="@dimen/MarginCardItemCourse"
+                android:background="@color/White"
+                app:cardCornerRadius="@dimen/cardCornerRadiusAppointment"
+                app:cardElevation="6dp">
+
+
+                <LinearLayout
+                    android:id="@+id/CardUploadMp3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="@dimen/WidthAndHeightImageItemCourse"
+                        android:layout_height="@dimen/WidthAndHeightImageItemCourse"
+                        android:layout_margin="@dimen/BetweenBtnAndDont"
+                        android:background="@drawable/style_logo_course"
+                        android:src="@drawable/ic_music" />
+
+                    <TextView
+                        style="@style/FontFamily"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="@string/mp3"
+                        android:textColor="@color/colorForMainText"
+                        android:textSize="@dimen/SizeHello" />
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="@dimen/MarginCardItemCourse"
+                android:background="@color/White"
+                app:cardCornerRadius="@dimen/cardCornerRadiusAppointment"
+                app:cardElevation="6dp">
+
+                <LinearLayout
+                    android:id="@+id/CardUploadVideo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="@dimen/WidthAndHeightImageItemCourse"
+                        android:layout_height="@dimen/WidthAndHeightImageItemCourse"
+
+                        android:layout_margin="@dimen/BetweenBtnAndDont"
+                        android:background="@drawable/style_logo_course"
+                        android:src="@drawable/ic_videocam" />
+
+                    <TextView
+                        style="@style/FontFamily"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="@string/video"
+                        android:textColor="@color/colorForMainText"
+
+                        android:textSize="@dimen/SizeHello" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="@dimen/MarginCardItemCourse"
+                android:background="@color/White"
+                app:cardCornerRadius="@dimen/cardCornerRadiusAppointment"
+                app:cardElevation="6dp">
+
+                <LinearLayout
+                    android:id="@+id/CardUploadPdf"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="@dimen/WidthAndHeightImageItemCourse"
+                        android:layout_height="@dimen/WidthAndHeightImageItemCourse"
+
+                        android:layout_margin="@dimen/BetweenBtnAndDont"
+                        android:background="@drawable/style_logo_course"
+                        android:src="@drawable/ic_picture" />
+
+                    <TextView
+                        style="@style/FontFamily"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="@string/pdf"
+                        android:textColor="@color/colorForMainText"
+
+                        android:textSize="@dimen/SizeHello"
+
+                        />
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

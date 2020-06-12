@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <dimen name="newsMoreTextSize">12sp</dimen>
+    <dimen name="Welcome">25sp</dimen>
+    <dimen name="Signin">10sp</dimen>
+    <dimen name="Username">10sp</dimen>
+    <dimen name="LoginBtn">15sp</dimen>
+    <dimen name="TextSizeVideo">25sp</dimen>
+    <dimen name="DontHaveAccount">10sp</dimen>
+    <dimen name="BetweenBtnAndDont">20dp</dimen>
+    <dimen name="BetweenDontAndSign">5dp</dimen>
+    <dimen name="MargintTopForBtn">15dp</dimen>
+    <dimen name="MargintTopForEditUserName">50dp</dimen>
+    <dimen name="MargintTopForEditPassword">20dp</dimen>
+    <dimen name="MargintTopForSignintocontinue">10dp</dimen>
+    <dimen name="WidthInputs">250dp</dimen>
+    <dimen name="HeightInputs">40dp</dimen>
+    <dimen name="WidthAndHeightSplashImage">250dp</dimen>
+    <dimen name="MargintTopForSplashImage">100dp</dimen>
+    <dimen name="MargintTopForAWS">120dp</dimen>
+    <dimen name="TextSizeForAWS">35sp</dimen>
+    <dimen name="HeightViewPagerWelcome">400dp</dimen>
+    <dimen name="WidthForTabWelcome">200dp</dimen>
+    <dimen name="MargintTopForLinerLayoutInWelcome">30dp</dimen>
+    <dimen name="HeightImageItemWelcome">300dp</dimen>
+    <dimen name="DescriptionForWelcome">20sp</dimen>
+    <dimen name="RecycleItemWelcome">600dp</dimen>
+    <dimen name="WidthForText1">95dp</dimen>
+    <dimen name="WidthForText2">40dp</dimen>
+    <dimen name="WidthForText3">120dp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">176dp</dimen>
+    <dimen name="PadingNotification">4dp</dimen>
+    <dimen name="WidthNotification">30dp</dimen>
+    <dimen name="HeightNotification">30dp</dimen>
+    <dimen name="WidthPointNotification">8dp</dimen>
+    <dimen name="HeightPointNotification">8dp</dimen>
+    <dimen name="MarginStartNotification">-10dp</dimen>
+    <dimen name="MarginBottomNotification">-8dp</dimen>
+    <dimen name="WidthAndHeightImageProfile">50dp</dimen>
+    <dimen name="MarginLinerFotText">15dp</dimen>
+    <dimen name="MarginEndForHeLLO">0dp</dimen>
+    <dimen name="MarginTopForHello">7dp</dimen>
+    <dimen name="WidthHello">70dp</dimen>
+    <dimen name="LetsStudy">12sp</dimen>
+    <dimen name="SizeHello">22sp</dimen>
+    <dimen name="PaddingForSearch">10dp</dimen>
+    <dimen name="HeightForSearch">40dp</dimen>
+    <dimen name="WidtehForSearch">300dp</dimen>
+    <dimen name="PaddingForDrawableSearch">35dp</dimen>
+    <dimen name="TextSizeForSearch">10sp</dimen>
+    <dimen name="HeightForItemCourse">200dp</dimen>
+    <dimen name="WidthForItemCourse">150dp</dimen>
+    <dimen name="DrawableSearchPadding">35dp</dimen>
+    <dimen name="cardCornerRadius">25dp</dimen>
+    <dimen name="PaddingForItemCourse">10dp</dimen>
+    <dimen name="WidthAndHeightImageItemCourse">50dp</dimen>
+    <dimen name="MarginCardItemCourse">12dp</dimen>
+    <dimen name="MarginYourAppointments">30dp</dimen>
+    <dimen name="cardCornerRadiusAppointment">15dp</dimen>
+    <dimen name="WidtehNameSubject">59dp</dimen>
+    <dimen name="WidtehToTime">25dp</dimen>
+    <dimen name="WidthNameSubject">55dp</dimen>
+    <dimen name="HeightForItemAppointment">60dp</dimen>
+    <dimen name="HeightItemLecture">150dp</dimen>
+    <dimen name="WidthStroke">1dp</dimen>
+    <dimen name="MarginStartOnline">-15dp</dimen>
+    <dimen name="design_navigation_icon_size" tools:override="true">30dp</dimen>
+    <dimen name="PaddingVideo">2dp</dimen>
+    <dimen name="design_fab_image_size" tools:override="true">25dp </dimen>
+    <dimen name="TextDate">8sp</dimen>
+    <dimen name="MarginBottom">170dp</dimen>
+    <dimen name="NameSize">30sp</dimen>
+    <dimen name="HeightForBtnRequest">40dp</dimen>
+
+
+</resources>

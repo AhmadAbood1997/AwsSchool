@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+
+            android:id="@+id/nav_upload"
+            android:icon="@drawable/icon_navigation"
+            android:title="@string/upload_lecture" />
+        <item
+            android:id="@+id/nav_insert_subject"
+            android:icon="@drawable/ic_course"
+            android:title="@string/insert_subjects" />
+
+        <item
+            android:id="@+id/nav_insert_test"
+            android:icon="@drawable/ic_test"
+            android:title="@string/insert_nearly_test" />
+
+
+        <item
+            android:id="@+id/nav_insert_mark"
+            android:icon="@drawable/ic_marks"
+            android:title="@string/insert_mark" />
+
+
+        <item
+            android:id="@+id/nav_setting"
+            android:icon="@drawable/ic_settings"
+            android:title="@string/setting" />
+
+
+
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_logout"
+            android:title="@string/logout" />
+
+
+    </group>
+</menu>

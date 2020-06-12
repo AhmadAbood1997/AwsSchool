@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_rowWeight="1"
+    android:layout_columnWeight="1"
+    android:layout_margin="@dimen/MarginCardItemCourse"
+    app:cardCornerRadius="@dimen/cardCornerRadiusAppointment"
+    app:cardElevation="6dp">
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/txtNameCourse"
+                        style="@style/FontFamily"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:maxLines="1"
+                        android:layout_margin="5dp"
+
+                        android:textSize="@dimen/LoginBtn" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/imgAppointment"
+                    android:layout_width="@dimen/WidthAndHeightImageItemCourse"
+                    android:layout_height="@dimen/WidthAndHeightImageItemCourse"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/ic_appointment" />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+</androidx.cardview.widget.CardView>

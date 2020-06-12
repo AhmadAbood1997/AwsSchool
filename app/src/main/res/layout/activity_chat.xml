@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".Views.Activities.ChatActivity">
+
+    <ScrollView
+        android:layout_above="@+id/toolSendMessageChat"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recMessagesChat"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/BetweenDontAndSign"
+            android:layout_marginEnd="@dimen/BetweenDontAndSign"
+            app:stackFromEnd="true"
+            tools:listitem="@layout/item_message_group"
+            />
+
+    </ScrollView>
+
+
+    <LinearLayout
+        android:id="@+id/toolSendMessageChat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center">
+
+        <EditText
+            android:id="@+id/edtTypeMessageChat"
+            style="@style/FontFamily"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/BetweenDontAndSign"
+            android:layout_weight="2"
+            android:background="@drawable/style_btn"
+            android:drawableStart="@drawable/size_face"
+            android:drawablePadding="@dimen/BetweenDontAndSign"
+            android:padding="@dimen/BetweenDontAndSign"
+            android:hint="@string/type_message_chat"
+            android:paddingStart="@dimen/MargintTopForSignintocontinue"
+            android:textColor="@color/White"
+            android:textColorHint="@color/White"
+            android:textSize="@dimen/DescriptionForWelcome" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btnSendMessageChat"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_margin="@dimen/BetweenDontAndSign"
+
+            android:src="@drawable/size_send" />
+    </LinearLayout>
+</RelativeLayout>

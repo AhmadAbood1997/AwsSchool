@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottomSheetUploadMp3"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/White"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="@dimen/MarginLinerFotText"
+    app:behavior_hideable="true"
+    app:behavior_peekHeight="0dp"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
+    tools:context=".Views.Activities.UploadMp3Activity">
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputEnterNameMp3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/MargintTopForBtn">
+
+        <EditText
+            android:id="@+id/editTextEnterNameMp3"
+            style="@style/FontFamily"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_mp3_name"
+            android:inputType="textEmailAddress"
+            android:padding="@dimen/Username"
+            android:textSize="@dimen/LoginBtn" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBarHorizaontalMp3"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        />
+
+    <Button
+        android:id="@+id/btnUploadMp3"
+        style="@style/FontFamily"
+        android:layout_width="@dimen/WidthInputs"
+        android:layout_height="@dimen/HeightInputs"
+        android:layout_marginTop="@dimen/MargintTopForBtn"
+        android:background="@drawable/style_btn"
+        android:text="@string/upload"
+        android:textAllCaps="false"
+        android:textColor="@color/colorTextButton"
+        android:textSize="@dimen/LoginBtn" />
+
+
+</LinearLayout>

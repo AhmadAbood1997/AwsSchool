@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">مدرسة اوس</string>
+    <string name="type_message_chat" translatable="false">اكتب رسالة...</string>
+    <string name="find_friend" translatable="false">ابحث عن صديق</string>
+    <string name="search_who_want_you_find" translatable="false">ابحث عن من تريد</string>
+    <string name="upload_lecture" translatable="false">ارفع محاضرة</string>
+    <string name="insert_subjects" translatable="false">ادخل مادة</string>
+    <string name="insert_nearly_test" translatable="false">ادخل فحص قريب</string>
+    <string name="insert_mark" translatable="false">ادخل علامة</string>
+    <string name="setting" translatable="false">الاعدادات</string>
+    <string name="logout" translatable="false">تسجيل خروج</string>
+    <string name="btnSendRequest" translatable="false">ارسل طلب صداقة</string>
+    <string name="btnCancelRequest" translatable="false">الغاء طلب صداقة</string>
+    <string name="accept_request" translatable="false">قبول طلب الصداقة</string>
+    <string name="remove_this_contact" translatable="false">حذف هذا الصديق</string>
+    <string name="user_name" translatable="false">البريد الالكتروني</string>
+    <string name="status" translatable="false">الحالة</string>
+    <string name="save" translatable="false">حفظ</string>
+    <string name="welcome_back" translatable="false">مرحباً مجدداً!</string>
+    <string name="sign_in_to_continue" translatable="false">سجل دخول لتستمر معنا</string>
+    <string name="email" translatable="false">البريد الالكتروني</string>
+    <string name="password" translatable="false">كلمة السر</string>
+    <string name="login" translatable="false">تسجيل دخول</string>
+    <string name="dont_have_account" translatable="false">لا تملك حساب؟</string>
+    <string name="sign_up" translatable="false">انشئ حساب</string>
+    <string name="sign_up_welcome" translatable="false">انشاء حساب</string>
+    <string name="create_your_account" translatable="false">انشئ حسابك الخاص</string>
+    <string name="Register" translatable="false">تسجيل الحساب</string>
+    <string name="already_have_an_account" translatable="false">تمتلك حساب من قبل</string>
+    <string name="select_what_you_need" translatable="false"> اختر ماذا تريد ...</string>
+    <string name="mp3" translatable="false">صوت</string>
+    <string name="pdf" translatable="false">ملف نصي</string>
+    <string name="video" translatable="false">فيديو</string>
+    <string name="next" translatable="false">التالي</string>
+    <string name="lets_go" translatable="false">هيا بنا</string>
+    <string name="we_have_a_lot_of_training_courses" translatable="false">لدينا الكثير من الدروس</string>
+    <string name="you_can_study_every_thing_from_your_house" translatable="false">يمكنك دراسة كل شيء من منزلك</string>
+    <string name="we_will_help_you_in_all_subjects" translatable="false">سوف نساعدك في كل المواد</string>
+    <string name="add_course" translatable="false">اضف كورس</string>
+    <string name="course_name" translatable="false">اسم الكورس</string>
+    <string name="teeacher_name" translatable="false">اسم المدرس</string>
+    <string name="select_the_days" translatable="false">اختر الايام</string>
+    <string name="sat" translatable="false">سبت</string>
+    <string name="sun" translatable="false">احد</string>
+    <string name="mon" translatable="false">اثنين</string>
+    <string name="tus" translatable="false">ثلاثاء</string>
+    <string name="wed" translatable="false">اربعاء</string>
+    <string name="thu" translatable="false">خميس</string>
+    <string name="fri" translatable="false">جمعة</string>
+    <string name="start" translatable="false">بداية</string>
+    <string name="end" translatable="false">نهاية</string>
+    <string name="add" translatable="false">اضف</string>
+    <string name="add_subject" translatable="false">اضافة مادة</string>
+    <string name="enter_marks_name" translatable="false">ادخل اسم العلامة</string>
+    <string name="upload" translatable="false">ارفع</string>
+    <string name="enter_mp3_name" translatable="false">ادخل اسم الصوت</string>
+    <string name="enter_test_name" translatable="false">ادخل اسم الامتحان</string>
+    <string name="select_date" translatable="false">ادخل التاريخ</string>
+    <string name="enter_pdf_name" translatable="false">ادخل اسم الملف</string>
+    <string name="enter_video_name" translatable="false">ادخل اسم الفيديو</string>
+    <string name="add_group" translatable="false">اضف مجموعة</string>
+    <string name="name" translatable="false">ادخل الاسم</string>
+    <string name="messages" translatable="false">الرسائل </string>
+    <string name="search_who_want_you_chat_with" translatable="false">اختر من تريد دردشته</string>
+    <string name="friends" translatable="false">الاصدقاء</string>
+    <string name="groups" translatable="false">المجموعات</string>
+    <string name="hello" translatable="false">مرحبا </string>
+    <string name="lets_to_study" translatable="false">هيا لندرس</string>
+    <string name="search_about_any_course_you_want" translatable="false">اختر اي كورس</string>
+    <string name="subjects_for_you" translatable="false">جميع المواد</string>
+    <string name="appointments" translatable="false">مواعيدك </string>
+    <string name="requests" translatable="false">الطلبات </string>
+    <string name="student" translatable="false">الطالب :</string>
+    <string name="please_wait" translatable="false">انتظر من فضلك</string>
+    <string name="select_a_group" translatable="false">اختر مجموعة</string>
+    <string name="marks" translatable="false">العلامات</string>
+    <string name="nearly_test" translatable="false">الامتحانات القريبة</string>
+    <string name="arabic_language" translatable="false">عربي</string>
+    <string name="english_language" translatable="false">انكليزي</string>
+
+
+</resources>

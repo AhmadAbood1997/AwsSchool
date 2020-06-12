@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_rowWeight="1"
+    android:layout_columnWeight="1"
+    android:padding="@dimen/PaddingForItemCourse"
+    app:cardElevation="6dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgProfileMessageChat"
+        android:src="@drawable/ic_interface"
+        android:layout_width="@dimen/WidthAndHeightImageProfile"
+        android:layout_height="@dimen/WidthAndHeightImageProfile"
+         />
+
+
+    <TextView
+        android:id="@+id/txtReceiveMessage"
+        style="@style/FontFamily"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="@dimen/BetweenDontAndSign"
+        android:layout_toEndOf="@+id/imgProfileMessageChat"
+        android:background="@drawable/style_message_receive"
+        android:padding="@dimen/PaddingForItemCourse"
+        android:textColor="@android:color/black"
+
+        android:textSize="@dimen/LoginBtn" />
+
+
+    <TextView
+        android:id="@+id/txtSendMessage"
+        style="@style/FontFamily"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:textColor="@android:color/black"
+        android:background="@drawable/style_message_send"
+        android:padding="@dimen/PaddingForItemCourse"
+        android:textSize="@dimen/LoginBtn"
+
+        />
+</RelativeLayout>

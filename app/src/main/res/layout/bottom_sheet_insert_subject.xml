@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottomSheetInsertSubject"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary"
+    app:behavior_hideable="true"
+    app:behavior_peekHeight="0dp"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+    <TextView
+        android:id="@+id/txtInsertSubjectTitle"
+        style="@style/FontFamily"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="@string/add_subject"
+        android:textColor="#fff"
+        android:textSize="@dimen/DescriptionForWelcome"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtInsertSubjectTitle">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:orientation="vertical"
+            android:padding="@dimen/BetweenDontAndSign">
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/BetweenDontAndSign">
+
+                <EditText
+                    android:id="@+id/edtSubjectBottomSheetSubjectName"
+                    style="@style/FontFamily"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:drawableTint="@color/colorPrimary"
+                    android:hint="@string/subject_name"
+                    android:inputType="text"
+                    android:textSize="@dimen/DescriptionForWelcome" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <Button
+                android:id="@+id/btnAddSubject"
+                style="@style/FontFamily"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_margin="@dimen/MarginLinerFotText"
+                android:background="@drawable/style_btn"
+                android:clickable="true"
+                android:textSize="@dimen/DescriptionForWelcome"
+
+                android:foreground="?android:attr/selectableItemBackground"
+                android:text="@string/add"
+                android:textColor="#fff"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnSaveSubject"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:background="@drawable/style_btn"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:text="@string/save"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

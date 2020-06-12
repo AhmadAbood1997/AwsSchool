@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".Views.Fragments.HomeFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/LinerText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/MarginLinerFotText"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/aa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/Hello"
+                        style="@style/FontFamily"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:text="@string/hello"
+                        android:textColor="@color/colorForMainText"
+                        android:textSize="@dimen/SizeHello" />
+
+
+                    <TextView
+                        android:id="@+id/txtfrgHomeNameUser"
+                        style="@style/FontFamily"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/MargintTopForSignintocontinue"
+                        android:maxLines="1"
+                        android:textColor="@color/colorForMainText"
+                        android:textSize="@dimen/SizeHello" />
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_below="@+id/aa"
+                    android:layout_alignEnd="@+id/aa"
+
+                    style="@style/FontFamily"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/MarginTopForHello"
+                    android:text="@string/lets_to_study"
+                    android:textSize="@dimen/LoginBtn" />
+
+            </RelativeLayout>
+
+
+            <EditText
+                android:id="@+id/edtSearchHomeFrg"
+                style="@style/FontFamily"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/WidthAndHeightImageProfile"
+                android:layout_margin="@dimen/MarginLinerFotText"
+                android:background="@drawable/style_search"
+                android:drawableEnd="@drawable/ic_search"
+                android:drawablePadding="@dimen/DrawableSearchPadding"
+                android:hint="@string/search_about_any_course_you_want"
+                android:maxLines="1"
+                android:padding="@dimen/PaddingForSearch"
+                android:textSize="@dimen/LoginBtn" />
+
+
+            <LinearLayout
+                android:id="@+id/LinerCourses"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/MarginLinerFotText"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/FontFamily"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/subjects_for_you"
+                        android:textColor="@color/colorForMainText"
+                        android:textSize="@dimen/SizeHello" />
+
+
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycleCourses"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                    tools:listitem="@layout/item_subject"
+
+                    />
+
+                <TextView
+                    style="@style/FontFamily"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/MarginYourAppointments"
+                    android:text="@string/appointments"
+                    android:textColor="@color/colorForMainText"
+                    android:textSize="@dimen/SizeHello"
+
+                    />
+
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recycleAppointments"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:listitem="@layout/item_appointment" />
+
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

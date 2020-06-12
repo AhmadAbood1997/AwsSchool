@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    >
+    <ImageButton
+        android:id="@+id/backToMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:background="@color/colorPrimary"
+        android:src="@drawable/ic_arrow_back"
+
+        />
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgGroupProfile"
+        android:layout_width="@dimen/WidthAndHeightImageProfile"
+        android:layout_height="@dimen/WidthAndHeightImageProfile"
+        android:layout_marginStart="@dimen/BetweenDontAndSign"
+        android:layout_toEndOf="@+id/backToMain"
+        android:src="@drawable/school" />
+
+    <TextView
+        android:id="@+id/txtNameGroup"
+        style="@style/FontFamily"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/BetweenDontAndSign"
+        android:layout_toEndOf="@+id/imgGroupProfile"
+        android:textColor="#fff"
+        android:textSize="@dimen/LoginBtn" />
+
+</LinearLayout>
+
+
+</RelativeLayout>

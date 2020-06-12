@@ -1,0 +1,939 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottomSheetInsertCourse"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary"
+    app:behavior_hideable="true"
+    app:behavior_peekHeight="0dp"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+    <TextView
+        android:id="@+id/txtDialogtCourseTitle"
+        style="@style/FontFamily"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="@string/add_course"
+        android:textColor="#fff"
+        android:textSize="@dimen/DescriptionForWelcome"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtDialogtCourseTitle">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:orientation="vertical"
+            android:padding="@dimen/BetweenDontAndSign">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/BetweenDontAndSign">
+
+                <EditText
+                    android:id="@+id/edtBottomSheetCourseName"
+                    style="@style/FontFamily"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:drawableTint="@color/colorPrimary"
+                    android:hint="@string/course_name"
+                    android:inputType="text"
+                    android:textSize="@dimen/DescriptionForWelcome" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/BetweenDontAndSign">
+
+                <EditText
+                    android:id="@+id/edtBottomSheetTeacherName"
+                    style="@style/FontFamily"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:drawableTint="@color/colorPrimary"
+
+                    android:hint="@string/teeacher_name"
+                    android:inputType="text"
+                    android:textSize="@dimen/DescriptionForWelcome" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <TextView
+                style="@style/FontFamily"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/style_btn"
+                android:gravity="center"
+                android:text="@string/select_the_days"
+                android:textColor="@color/White"
+                android:textSize="@dimen/DescriptionForWelcome" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/BetweenDontAndSign"
+                android:gravity="center"
+
+                >
+
+                <CheckBox
+                    android:id="@+id/chkSat"
+                    style="@style/FontFamily"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/BetweenDontAndSign"
+                    android:layout_weight="1"
+                    android:background="@drawable/style_btn"
+                    android:gravity="center"
+                    android:text="@string/sat"
+                    android:textColor="@color/White"
+                    android:textSize="@dimen/DescriptionForWelcome" />
+
+
+                <LinearLayout
+                    android:id="@+id/LayoutSat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/chkSat"
+                    android:layout_alignBottom="@+id/chkSat"
+                    android:layout_centerHorizontal="true"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/btnStartSat"
+                        style="@style/FontFamily"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_margin="@dimen/BetweenDontAndSign"
+                        android:background="@drawable/style_btn"
+                        android:text="@string/start"
+
+                        android:textColor="@color/White"
+                        android:textSize="@dimen/DescriptionForWelcome" />
+
+                    <Button
+                        android:id="@+id/btnEndSat"
+                        style="@style/FontFamily"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/chk"
+                        android:layout_alignBottom="@+id/chk"
+                        android:layout_margin="@dimen/BetweenDontAndSign"
+
+                        android:layout_toEndOf="@+id/start"
+                        android:background="@drawable/style_btn"
+                        android:text="@string/end"
+                        android:textColor="@color/White"
+                        android:textSize="@dimen/DescriptionForWelcome"
+
+                        />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/LayoutSat"
+                    android:layout_alignParentEnd="true"
+                    android:layout_weight="1"
+                    android:gravity="center"
+
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtStartSat"
+                        style="@style/FontFamily"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text=""
+                        android:textSize="@dimen/LoginBtn" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="" />
+
+                    <TextView
+                        android:id="@+id/txtEndSat"
+                        style="@style/FontFamily"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text=""
+
+                        android:textSize="@dimen/LoginBtn" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@drawable/style_btn" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/BetweenDontAndSign"
+                android:gravity="center"
+
+                >
+
+                <CheckBox
+                    android:id="@+id/chkSun"
+                    style="@style/FontFamily"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_margin="@dimen/BetweenDontAndSign"
+                    android:layout_weight="1"
+                    android:background="@drawable/style_btn"
+                    android:gravity="center"
+
+                    android:text="@string/sun"
+                    android:textColor="@color/White"
+                    android:textSize="@dimen/DescriptionForWelcome" />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/chkSat"
+                    android:layout_alignBottom="@+id/chkSat"
+                    android:layout_centerHorizontal="true"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/btnStartSun"
+                        style="@style/FontFamily"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_margin="@dimen/BetweenDontAndSign"
+                        android:background="@drawable/style_btn"
+                        android:text="@string/start"
+
+                        android:textColor="@color/White"
+
+                        android:textSize="@dimen/DescriptionForWelcome" />
+
+                    <Button
+                        android:id="@+id/btnEndSun"
+                        style="@style/FontFamily"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/chk"
+                        android:layout_alignBottom="@+id/chk"
+                        android:layout_margin="@dimen/BetweenDontAndSign"
+                        android:layout_toEndOf="@+id/start"
+                        android:background="@drawable/style_btn"
+
+                        android:text="@string/end"
+                        android:textColor="@color/White"
+                        android:textSize="@dimen/DescriptionForWelcome"
+
+                        />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/LayoutSat"
+                    android:layout_alignParentEnd="true"
+                    android:layout_weight="1"
+                    android:gravity="center"
+
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtStartSun"
+                        style="@style/FontFamily"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+
+                        android:text="" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="" />
+
+                    <TextView
+                        android:id="@+id/txtEndSun"
+                        style="@style/FontFamily"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+
+                        android:text="" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@drawable/style_btn" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/BetweenDontAndSign"
+                android:gravity="center"
+
+                >
+
+                <CheckBox
+                    android:id="@+id/chkMon"
+                    style="@style/FontFamily"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_margin="@dimen/BetweenDontAndSign"
+                    android:layout_weight="1"
+                    android:background="@drawable/style_btn"
+                    android:gravity="center"
+
+                    android:text="@string/mon"
+                    android:textColor="@color/White"
+                    android:textSize="@dimen/DescriptionForWelcome" />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/btnStartMon"
+                        style="@style/FontFamily"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/BetweenDontAndSign"
+                        android:background="@drawable/style_btn"
+                        android:text="@string/start"
+
+                        android:textColor="@color/White"
+
+                        android:textSize="@dimen/DescriptionForWelcome" />
+
+                    <Button
+                        android:id="@+id/btnEndMon"
+                        style="@style/FontFamily"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/chk"
+                        android:layout_alignBottom="@+id/chk"
+                        android:layout_margin="@dimen/BetweenDontAndSign"
+                        android:layout_toEndOf="@+id/start"
+                        android:background="@drawable/style_btn"
+
+                        android:text="@string/end"
+                        android:textColor="@color/White"
+                        android:textSize="@dimen/DescriptionForWelcome"
+
+                        />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/LayoutSat"
+                    android:layout_alignParentEnd="true"
+                    android:layout_weight="1"
+                    android:gravity="center"
+
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtStartMon"
+                        style="@style/FontFamily"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+
+                        android:text="" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="" />
+
+                    <TextView
+                        android:id="@+id/txtEndMon"
+                        style="@style/FontFamily"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+
+                        android:text="" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@drawable/style_btn" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/BetweenDontAndSign"
+                android:gravity="center"
+
+                >
+
+                <CheckBox
+                    android:id="@+id/chkTus"
+                    style="@style/FontFamily"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_margin="@dimen/BetweenDontAndSign"
+                    android:layout_weight="1"
+                    android:background="@drawable/style_btn"
+                    android:gravity="center"
+
+                    android:text="@string/tus"
+                    android:textColor="@color/White"
+                    android:textSize="@dimen/DescriptionForWelcome" />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/btnStartTus"
+                        style="@style/FontFamily"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/BetweenDontAndSign"
+                        android:background="@drawable/style_btn"
+                        android:text="@string/start"
+
+                        android:textColor="@color/White"
+
+                        android:textSize="@dimen/DescriptionForWelcome" />
+
+                    <Button
+                        android:id="@+id/btnEndTus"
+                        style="@style/FontFamily"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/chk"
+                        android:layout_alignBottom="@+id/chk"
+                        android:layout_margin="@dimen/BetweenDontAndSign"
+                        android:layout_toEndOf="@+id/start"
+                        android:background="@drawable/style_btn"
+                        android:text="@string/end"
+
+                        android:textColor="@color/White"
+                        android:textSize="@dimen/DescriptionForWelcome"
+
+                        />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_weight="1"
+                    android:gravity="center"
+
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtStartTus"
+                        style="@style/FontFamily"
+                        android:layout_width="wrap_content"
+
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="" />
+
+                    <TextView
+                        android:id="@+id/txtEndTus"
+                        style="@style/FontFamily"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_weight="1"
+                        android:text="" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@drawable/style_btn" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/BetweenDontAndSign"
+                android:gravity="center"
+
+                >
+
+                <CheckBox
+                    android:id="@+id/chkWed"
+                    style="@style/FontFamily"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_margin="@dimen/BetweenDontAndSign"
+                    android:layout_weight="1"
+                    android:background="@drawable/style_btn"
+                    android:gravity="center"
+
+                    android:text="@string/wed"
+                    android:textColor="@color/White"
+                    android:textSize="@dimen/DescriptionForWelcome" />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/btnStartWed"
+                        style="@style/FontFamily"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/BetweenDontAndSign"
+                        android:background="@drawable/style_btn"
+                        android:text="@string/start"
+
+                        android:textColor="@color/White"
+
+                        android:textSize="@dimen/DescriptionForWelcome" />
+
+                    <Button
+                        android:id="@+id/btnEndWed"
+                        style="@style/FontFamily"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/chk"
+                        android:layout_alignBottom="@+id/chk"
+                        android:layout_margin="@dimen/BetweenDontAndSign"
+                        android:layout_toEndOf="@+id/start"
+
+                        android:background="@drawable/style_btn"
+                        android:text="@string/end"
+                        android:textColor="@color/White"
+                        android:textSize="@dimen/DescriptionForWelcome"
+
+                        />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/LayoutSat"
+                    android:layout_alignParentEnd="true"
+                    android:layout_weight="1"
+                    android:gravity="center"
+
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtStartWed"
+                        style="@style/FontFamily"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_weight="1"
+                        android:text="" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="" />
+
+                    <TextView
+                        android:id="@+id/txtEndWed"
+                        style="@style/FontFamily"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_weight="1"
+                        android:text="" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@drawable/style_btn" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/BetweenDontAndSign"
+                android:gravity="center"
+
+                >
+
+                <CheckBox
+                    android:id="@+id/chkThu"
+                    style="@style/FontFamily"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_margin="@dimen/BetweenDontAndSign"
+                    android:layout_weight="1"
+                    android:background="@drawable/style_btn"
+                    android:gravity="center"
+
+                    android:text="@string/thu"
+                    android:textColor="@color/White"
+                    android:textSize="@dimen/DescriptionForWelcome" />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/btnStartThu"
+                        style="@style/FontFamily"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/BetweenDontAndSign"
+                        android:background="@drawable/style_btn"
+                        android:text="@string/start"
+
+                        android:textColor="@color/White"
+
+                        android:textSize="@dimen/DescriptionForWelcome" />
+
+                    <Button
+                        android:id="@+id/btnEndThu"
+                        style="@style/FontFamily"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/chk"
+                        android:layout_alignBottom="@+id/chk"
+                        android:layout_margin="@dimen/BetweenDontAndSign"
+                        android:layout_toEndOf="@+id/start"
+                        android:background="@drawable/style_btn"
+                        android:text="@string/end"
+                        android:textColor="@color/White"
+                        android:textSize="@dimen/DescriptionForWelcome"
+
+                        />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/LayoutSat"
+                    android:layout_alignParentEnd="true"
+                    android:layout_weight="1"
+                    android:gravity="center"
+
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtStartThu"
+                        style="@style/FontFamily"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+
+                        android:text="" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="" />
+
+                    <TextView
+                        android:id="@+id/txtEndThu"
+                        style="@style/FontFamily"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_weight="1"
+                        android:text="" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@drawable/style_btn" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/BetweenDontAndSign"
+                android:gravity="center"
+
+                >
+
+                <CheckBox
+                    android:id="@+id/chkFri"
+                    style="@style/FontFamily"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_margin="@dimen/BetweenDontAndSign"
+                    android:layout_weight="1"
+
+                    android:background="@drawable/style_btn"
+                    android:gravity="center"
+                    android:text="@string/fri"
+                    android:textColor="@color/White"
+                    android:textSize="@dimen/DescriptionForWelcome" />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/btnStartFri"
+                        style="@style/FontFamily"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/BetweenDontAndSign"
+                        android:background="@drawable/style_btn"
+                        android:text="@string/start"
+
+                        android:textColor="@color/White"
+
+                        android:textSize="@dimen/DescriptionForWelcome" />
+
+                    <Button
+                        android:id="@+id/btnEndFri"
+                        style="@style/FontFamily"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/chk"
+                        android:layout_alignBottom="@+id/chk"
+                        android:layout_margin="@dimen/BetweenDontAndSign"
+                        android:layout_toEndOf="@+id/start"
+                        android:background="@drawable/style_btn"
+                        android:text="@string/end"
+                        android:textColor="@color/White"
+                        android:textSize="@dimen/DescriptionForWelcome"
+
+                        />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/LayoutSat"
+                    android:layout_alignParentEnd="true"
+                    android:layout_weight="1"
+                    android:gravity="center"
+
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtStartFri"
+                        style="@style/FontFamily"
+                        android:layout_width="wrap_content"
+
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="" />
+
+                    <TextView
+                        android:id="@+id/txtEndFri"
+                        style="@style/FontFamily"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+
+                        android:text="" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@drawable/style_btn" />
+
+
+            <Button
+                android:id="@+id/btnAddCourse"
+                style="@style/FontFamily"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_margin="@dimen/MarginLinerFotText"
+                android:background="@drawable/style_btn"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+
+                android:text="@string/add"
+                android:textColor="#fff"
+                android:textSize="@dimen/DescriptionForWelcome"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnSaveCourse"
+                style="@style/FontFamily"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_margin="@dimen/MarginLinerFotText"
+                android:background="@drawable/style_btn"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+
+                android:text="@string/save"
+                android:textColor="#fff"
+                android:textSize="@dimen/DescriptionForWelcome"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>
